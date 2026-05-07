@@ -49,7 +49,7 @@
 
 /* Mobile bottom nav: dark brand brown with light icons */
 @media (max-width: 767.98px) {
-  [data-testid="nav-bottom"].fixed.bottom-0 {
+  nav[data-testid="nav-bottom"].fixed.bottom-0 {
     background: #2a1f17 !important;
     background-color: #2a1f17 !important;
     backdrop-filter: blur(10px) !important;
@@ -60,9 +60,12 @@
     padding-bottom: max(6px, env(safe-area-inset-bottom)) !important;
   }
 
-  [data-testid="nav-bottom"] a,
-  [data-testid="nav-bottom"] button {
-    color: rgba(221, 220, 215, 0.65) !important;
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"],
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"] *:not(svg):not(svg *) {
+    color: rgba(221, 220, 215, 0.7) !important;
+  }
+
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"] {
     background: transparent !important;
     background-color: transparent !important;
     border-radius: 12px !important;
@@ -70,54 +73,38 @@
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
   }
 
-  [data-testid="nav-bottom"] a:hover,
-  [data-testid="nav-bottom"] button:hover,
-  [data-testid="nav-bottom"] a:focus-visible,
-  [data-testid="nav-bottom"] button:focus-visible {
-    background: rgba(255, 255, 255, 0.08) !important;
-    background-color: rgba(255, 255, 255, 0.08) !important;
-    color: #ffffff !important;
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"] svg,
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"] svg * {
+    color: currentColor !important;
+    stroke: currentColor !important;
+    fill: transparent !important;
   }
 
-  [data-testid="nav-bottom"] *:hover > a,
-  [data-testid="nav-bottom"] *:hover > button,
-  [data-testid="nav-bottom"] a:hover,
-  [data-testid="nav-bottom"] button:hover {
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"]:hover,
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"]:focus-visible {
     background: rgba(255, 255, 255, 0.08) !important;
     background-color: rgba(255, 255, 255, 0.08) !important;
     color: #ffffff !important;
     transform: translateY(-1px) !important;
   }
 
-  [data-testid="nav-bottom"] a:hover *,
-  [data-testid="nav-bottom"] button:hover * {
-    color: inherit !important;
-    stroke: inherit !important;
-  }
-
-  [data-testid="nav-bottom"] a:hover svg,
-  [data-testid="nav-bottom"] button:hover svg,
-  [data-testid="nav-bottom"] a:hover svg *,
-  [data-testid="nav-bottom"] button:hover svg * {
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"]:hover *:not(svg):not(svg *),
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"]:focus-visible *:not(svg):not(svg *) {
     color: #ffffff !important;
-    stroke: #ffffff !important;
-    fill: transparent !important;
   }
 
-  [data-testid="nav-bottom"] a[class*="text-accent"],
-  [data-testid="nav-bottom"] button[class*="text-accent"],
-  [data-testid="nav-bottom"] a[aria-current="page"],
-  [data-testid="nav-bottom"] button[aria-current="page"] {
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"].text-accent,
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"][class*="text-accent"],
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"][aria-current="page"] {
     color: #ffffff !important;
     background: rgba(255, 255, 255, 0.14) !important;
     background-color: rgba(255, 255, 255, 0.14) !important;
     font-weight: 600 !important;
   }
 
-  [data-testid="nav-bottom"] svg,
-  [data-testid="nav-bottom"] svg * {
-    color: currentColor !important;
-    stroke: currentColor !important;
-    fill: transparent !important;
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"].text-accent *:not(svg):not(svg *),
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"][class*="text-accent"] *:not(svg):not(svg *),
+  nav[data-testid="nav-bottom"] [data-testid^="btn-bottom-nav-"][aria-current="page"] *:not(svg):not(svg *) {
+    color: #ffffff !important;
   }
 }
