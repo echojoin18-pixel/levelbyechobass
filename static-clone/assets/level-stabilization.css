@@ -47,22 +47,24 @@
   }
 }
 
-/* Mobile bottom nav: cleaner premium style */
+/* Mobile bottom nav: dark brand brown with light icons */
 @media (max-width: 767.98px) {
-  [data-testid="nav-bottom"] {
-    background: rgba(255, 255, 255, 0.9) !important;
-    background-color: rgba(255, 255, 255, 0.9) !important;
+  [data-testid="nav-bottom"].fixed.bottom-0 {
+    background: #2a1f17 !important;
+    background-color: #2a1f17 !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    border-top: 1px solid rgba(74, 61, 43, 0.14) !important;
-    box-shadow: 0 -8px 20px rgba(20, 16, 10, 0.08) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.10) !important;
+    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.28) !important;
     padding-top: 6px !important;
     padding-bottom: max(6px, env(safe-area-inset-bottom)) !important;
   }
 
   [data-testid="nav-bottom"] a,
   [data-testid="nav-bottom"] button {
-    color: #5c5245 !important;
+    color: rgba(221, 220, 215, 0.65) !important;
+    background: transparent !important;
+    background-color: transparent !important;
     border-radius: 12px !important;
     padding: 4px 8px !important;
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
@@ -72,16 +74,18 @@
   [data-testid="nav-bottom"] button:hover,
   [data-testid="nav-bottom"] a:focus-visible,
   [data-testid="nav-bottom"] button:focus-visible {
-    background: #f0f0ec !important;
-    color: #2f271f !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
   }
 
   [data-testid="nav-bottom"] *:hover > a,
   [data-testid="nav-bottom"] *:hover > button,
   [data-testid="nav-bottom"] a:hover,
   [data-testid="nav-bottom"] button:hover {
-    background: #f0f0ec !important;
-    color: #2f271f !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
     transform: translateY(-1px) !important;
   }
 
@@ -95,8 +99,8 @@
   [data-testid="nav-bottom"] button:hover svg,
   [data-testid="nav-bottom"] a:hover svg *,
   [data-testid="nav-bottom"] button:hover svg * {
-    color: #5c5245 !important;
-    stroke: #5c5245 !important;
+    color: #ffffff !important;
+    stroke: #ffffff !important;
     fill: transparent !important;
   }
 
@@ -104,8 +108,9 @@
   [data-testid="nav-bottom"] button[class*="text-accent"],
   [data-testid="nav-bottom"] a[aria-current="page"],
   [data-testid="nav-bottom"] button[aria-current="page"] {
-    color: #2a1f17 !important;
-    background: rgba(74, 61, 43, 0.12) !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    background-color: rgba(255, 255, 255, 0.14) !important;
     font-weight: 600 !important;
   }
 
