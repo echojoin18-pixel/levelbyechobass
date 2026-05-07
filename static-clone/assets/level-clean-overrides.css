@@ -1,0 +1,1954 @@
+[data-testid="section-hero-slider"] > div.absolute.inset-0 > div.absolute.inset-0 {
+  background: linear-gradient(to right, rgba(250, 242, 230, 0.92) 0%, rgba(250, 242, 230, 0.62) 48%, rgba(42, 31, 23, 0.18) 100%) !important;
+}
+
+[data-testid="section-categories"] > div,
+[data-testid="section-categories"] a,
+[data-testid="section-categories"] a > div {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-testid="section-categories"] a,
+[data-testid="section-categories"] a > div {
+  border: 0 !important;
+}
+
+[data-testid="section-categories"] .hidden.md\:flex {
+  display: none !important;
+}
+
+[data-testid="section-categories"] a::before,
+[data-testid="section-categories"] a::after,
+[data-testid="section-categories"] a > div::before,
+[data-testid="section-categories"] a > div::after {
+  display: none !important;
+  content: none !important;
+}
+
+@media (max-width: 767.98px) {
+  [data-testid="section-hero-slider"] + div {
+    background: var(--client-offwhite) !important;
+    border-radius: 18px !important;
+    padding: 10px 0 12px !important;
+    margin: 0 16px !important;
+  }
+
+  [data-testid="section-categories"] {
+    background: #e8e8e3 !important;
+    background-color: #e8e8e3 !important;
+    border-radius: 18px !important;
+    padding: 10px 0 12px !important;
+  }
+
+  [data-testid="section-categories"] .md\:hidden {
+    gap: 14px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    background: transparent !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 420px !important;
+  }
+
+  [data-testid="section-categories"] .md\:hidden > a {
+    width: 90px !important;
+  }
+
+  [data-testid="section-categories"] .md\:hidden > a > div > div:first-child {
+    width: 72px !important;
+    height: 72px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  [data-testid="section-categories"] .md\:hidden {
+    display: flex !important;
+  }
+
+  [data-testid="section-categories"] .hidden.md\:flex {
+    display: none !important;
+  }
+}
+
+/* Dropdown items hover: always white background */
+[data-testid="drawer-menu"] .pb-1 a:hover,
+[data-testid="drawer-menu"] .pb-1 button:hover,
+[data-testid="drawer-menu"] .pb-1 a:focus-visible,
+[data-testid="drawer-menu"] .pb-1 button:focus-visible,
+#root > div.min-h-screen > div.sticky.top-0 [role="menu"] a:hover,
+#root > div.min-h-screen > div.sticky.top-0 [role="menu"] button:hover,
+#root > div.min-h-screen > div.sticky.top-0 [role="menu"] a:focus-visible,
+#root > div.min-h-screen > div.sticky.top-0 [role="menu"] button:focus-visible,
+#root > div.min-h-screen > div.sticky.top-0 [class*="dropdown"] a:hover,
+#root > div.min-h-screen > div.sticky.top-0 [class*="dropdown"] button:hover,
+#root > div.min-h-screen > div.sticky.top-0 a[role="menuitem"]:hover,
+#root > div.min-h-screen > div.sticky.top-0 button[role="menuitem"]:hover,
+#root > div.min-h-screen > div.sticky.top-0 a[role="menuitem"]:focus-visible,
+#root > div.min-h-screen > div.sticky.top-0 button[role="menuitem"]:focus-visible {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+[data-testid="drawer-menu"] .pb-1 a:hover *,
+[data-testid="drawer-menu"] .pb-1 button:hover *,
+#root > div.min-h-screen > div.sticky.top-0 [role="menu"] a:hover *,
+#root > div.min-h-screen > div.sticky.top-0 [role="menu"] button:hover *,
+#root > div.min-h-screen > div.sticky.top-0 [class*="dropdown"] a:hover *,
+#root > div.min-h-screen > div.sticky.top-0 [class*="dropdown"] button:hover *,
+#root > div.min-h-screen > div.sticky.top-0 a[role="menuitem"]:hover *,
+#root > div.min-h-screen > div.sticky.top-0 button[role="menuitem"]:hover * {
+  color: #000000 !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Final marquee background override */
+[data-testid="section-hero-slider"] + div,
+[data-testid="section-hero-slider"] + div[style] {
+  background: #f4f4f1 !important;
+  background-color: #f4f4f1 !important;
+}
+
+/* Desktop tabs */
+@media (min-width: 768px) {
+  /* Separate tabs row from main menu/header row */
+  #root > div.min-h-screen > div.sticky.top-0 > div:last-child,
+  #root > div.min-h-screen > div.sticky.top-0 nav,
+  #root > div.min-h-screen > div.sticky.top-0 [role="navigation"] {
+    background: #f4f4f1 !important;
+    background-color: #f4f4f1 !important;
+    border-top: 1px solid #e2e2dc !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  /* Force all desktop tabs to white (remove brown blocks) */
+  #root > div.min-h-screen > div.sticky.top-0 > div:last-child button,
+  #root > div.min-h-screen > div.sticky.top-0 > div:last-child a,
+  #root > div.min-h-screen > div.sticky.top-0 nav button,
+  #root > div.min-h-screen > div.sticky.top-0 nav a,
+  #root > div.min-h-screen > div.sticky.top-0 [role="navigation"] button,
+  #root > div.min-h-screen > div.sticky.top-0 [role="navigation"] a {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border-color: #d9d9d3 !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+  }
+
+  #root > div.min-h-screen > div.sticky.top-0 > div:last-child button *,
+  #root > div.min-h-screen > div.sticky.top-0 > div:last-child a *,
+  #root > div.min-h-screen > div.sticky.top-0 nav button *,
+  #root > div.min-h-screen > div.sticky.top-0 nav a *,
+  #root > div.min-h-screen > div.sticky.top-0 [role="navigation"] button *,
+  #root > div.min-h-screen > div.sticky.top-0 [role="navigation"] a * {
+    color: #000000 !important;
+    fill: currentColor !important;
+    stroke: currentColor !important;
+  }
+
+  #root > div.min-h-screen > div.sticky.top-0 button[data-client-active-tab="false"],
+  #root > div.min-h-screen > div.sticky.top-0 a[data-client-active-tab="false"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border-color: #d9d9d3 !important;
+    color: #000000 !important;
+  }
+
+  #root > div.min-h-screen > div.sticky.top-0 button[data-client-active-tab="true"],
+  #root > div.min-h-screen > div.sticky.top-0 a[data-client-active-tab="true"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border-color: #d9d9d3 !important;
+    color: #000000 !important;
+  }
+
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"],
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"]:hover,
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"]:focus-visible {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border-color: #d9d9d3 !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+  }
+
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"]:hover,
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"]:focus-visible {
+    background: #4a3d2b !important;
+    background-color: #4a3d2b !important;
+    border-color: #4a3d2b !important;
+    color: #ffffff !important;
+  }
+
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"]:hover *,
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"]:focus-visible * {
+    color: #ffffff !important;
+    fill: currentColor !important;
+    stroke: currentColor !important;
+  }
+
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"][aria-selected="true"],
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"][data-state="active"] {
+    background: #4a3d2b !important;
+    background-color: #4a3d2b !important;
+    border-color: #4a3d2b !important;
+    color: #ffffff !important;
+  }
+
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"][aria-selected="true"] *,
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"][data-state="active"] *,
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"][aria-selected="true"] span,
+  #root > div.min-h-screen > div.sticky.top-0 [role="tab"][data-state="active"] span {
+    color: #ffffff !important;
+    fill: currentColor !important;
+    stroke: currentColor !important;
+  }
+}
+
+/* Mobile drawer: New Arrivals button should not get highlighted background */
+@media (max-width: 767.98px) {
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"][aria-expanded="true"] {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"],
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"] *,
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"] svg,
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"] svg * {
+    color: #000000 !important;
+    fill: currentColor !important;
+    stroke: currentColor !important;
+  }
+
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"] span,
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"] span *,
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"] [style*="color"] {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
+
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"] span[style*="newPulse"],
+  [data-testid="drawer-menu"] .flex-1 > div > button[data-client-new-arrivals="true"] span[style*="newPulse"] * {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    animation: newPulse 1.4s ease-in-out infinite !important;
+    box-shadow: none !important;
+  }
+}
+
+[data-testid="section-hero-slider"] + div,
+[data-testid="section-hero-slider"] + div[style] {
+  background: #f4f4f1 !important;
+  background-color: #f4f4f1 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-testid="section-hero-slider"] + div * {
+  border-color: transparent !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+[data-testid="drawer-menu"] > div:nth-child(2) > a[href="https://level-egypt.com"] {
+  display: none !important;
+}
+
+/* Mobile drawer panel background */
+[data-testid="drawer-menu"],
+[data-testid="drawer-menu"] > div,
+[data-testid="drawer-menu"] [class*="bg-"],
+[data-testid="drawer-menu"] [style*="background"] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Mobile drawer: only top header area behind logo uses circles bg */
+[data-testid="drawer-menu"] > div:first-child {
+  background: #e8e8e3 !important;
+  background-color: #e8e8e3 !important;
+}
+
+/* Slightly larger logo inside mobile drawer header */
+[data-testid="drawer-menu"] > div:first-child img,
+[data-testid="drawer-menu"] > div:first-child svg[aria-label*="Level"],
+[data-testid="drawer-menu"] > div:first-child [alt*="Level"] {
+  transform: scale(1.04) !important;
+  transform-origin: left center !important;
+}
+
+
+[data-testid="section-hero-slider"] h1 {
+  color: #2a1f17 !important;
+}
+
+[data-testid="section-hero-slider"] p {
+  color: rgba(58, 40, 24, 0.68) !important;
+}
+
+[data-testid="section-hero-slider"] span {
+  color: rgba(58, 40, 24, 0.72) !important;
+  border-color: rgba(141, 101, 56, 0.28) !important;
+  background: rgba(255, 250, 241, 0.46) !important;
+}
+
+[data-testid^="btn-hero-cta-"] {
+  background: var(--client-brown-dark) !important;
+  color: #ffffff !important;
+}
+
+[data-testid="section-hero-slider"] [data-testid^="btn-hero-cta-"],
+[data-testid="section-hero-slider"] [data-testid^="btn-hero-cta-"] * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid^="btn-hero-cta-"]:hover {
+  background: var(--client-brown-dark) !important;
+}
+
+[data-testid^="btn-hero-cta2-"] {
+  border-color: rgba(58, 40, 24, 0.45) !important;
+  color: #2a1f17 !important;
+  background: rgba(255, 250, 241, 0.3) !important;
+}
+
+[data-testid^="btn-hero-cta2-"]:hover {
+  border-color: rgba(173, 125, 56, 0.9) !important;
+  background: rgba(255, 250, 241, 0.72) !important;
+}
+
+[data-testid="btn-hero-prev"],
+[data-testid="btn-hero-next"] {
+  background: rgba(255, 250, 241, 0.72) !important;
+  border: 1px solid rgba(141, 101, 56, 0.22) !important;
+  color: #2a1f17 !important;
+}
+
+.bg-accent,
+.bg-\[\#c8a951\],
+button[style*="#c79545"],
+a[style*="#c79545"],
+span[style*="#c79545"] {
+  background-color: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+}
+
+[data-testid^="card-"] span.absolute,
+[data-testid^="card-product-"] span.absolute,
+[data-testid^="card-bestseller-"] span.absolute,
+[data-testid^="card-deal-"] span.absolute,
+[data-testid="section-new-arrivals"] span.absolute,
+[data-testid="section-kids-new-arrivals"] span.absolute {
+  background: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+  border-color: transparent !important;
+}
+
+[data-testid="section-new-arrivals"] span.absolute,
+[data-testid="section-kids-new-arrivals"] span.absolute {
+  background: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+}
+
+[data-testid^="card-bestseller-"] span.absolute {
+  background: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+}
+
+[data-testid="section-deals"] > div:first-child p:first-child,
+[data-testid="section-deals"] > div:first-child h2 {
+  color: var(--client-brown-dark) !important;
+}
+
+[data-testid="section-deals"] [style*="#c79545"] {
+  background-color: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+}
+
+.text-accent,
+a.text-accent,
+.border-accent {
+  color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+}
+
+[data-testid^="card-"],
+.group.relative.rounded-xl {
+  box-shadow: 0 8px 18px rgba(104, 76, 46, 0.08) !important;
+}
+
+[data-testid^="card-"]:hover,
+.group.relative.rounded-xl:hover {
+  box-shadow: 0 18px 34px rgba(199, 149, 69, 0.18) !important;
+}
+
+.section-description,
+.codex-section-description {
+  color: rgba(58, 40, 24, 0.58) !important;
+  font-size: 11px !important;
+  line-height: 1.55 !important;
+  margin-top: 1px !important;
+  max-width: 360px !important;
+}
+
+[data-testid="section-new-arrivals"] section > div > div:first-child {
+  align-items: flex-start !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  column-gap: 16px !important;
+  row-gap: 2px !important;
+}
+
+[data-testid="section-new-arrivals"] section > div > div:first-child > h2,
+[data-testid="section-new-arrivals"] section > div > div:first-child h2 {
+  display: block !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: auto !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+}
+
+[data-testid="section-new-arrivals"] section > div > div:first-child .codex-section-description,
+[data-testid="section-new-arrivals"] section > div > div:first-child .section-description {
+  display: block !important;
+  grid-column: 1 / -1 !important;
+  grid-row: 2 !important;
+  width: 100% !important;
+  margin-top: 1px !important;
+  margin-bottom: 0 !important;
+}
+
+[data-testid="section-new-arrivals"] section > div > div:first-child a {
+  align-self: start !important;
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  justify-self: end !important;
+  margin-top: 1px !important;
+  white-space: nowrap !important;
+}
+
+[data-testid="section-kids-new-arrivals"] > div:first-child {
+  align-items: flex-start !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  column-gap: 16px !important;
+  row-gap: 2px !important;
+}
+
+[data-testid="section-kids-new-arrivals"] > div:first-child > h2,
+[data-testid="section-kids-new-arrivals"] > div:first-child h2 {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  margin: 0 !important;
+}
+
+[data-testid="section-kids-new-arrivals"] > div:first-child .codex-section-description,
+[data-testid="section-kids-new-arrivals"] > div:first-child .section-description {
+  grid-column: 1 / -1 !important;
+  grid-row: 2 !important;
+  margin-top: 1px !important;
+  margin-bottom: 0 !important;
+}
+
+[data-testid="section-kids-new-arrivals"] > div:first-child a {
+  align-self: start !important;
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  justify-self: end !important;
+  margin-top: 1px !important;
+  white-space: nowrap !important;
+}
+
+[data-testid="section-new-arrivals"] button.absolute.top-3.right-3 {
+  background: rgba(255, 250, 241, 0.88) !important;
+  border: 1px solid rgba(104, 76, 46, 0.16) !important;
+  color: #3a2818 !important;
+  box-shadow: 0 6px 14px rgba(104, 76, 46, 0.10) !important;
+}
+
+[data-testid="section-new-arrivals"] button.absolute.top-3.right-3 svg:not(.fill-red-500) {
+  color: #3a2818 !important;
+  stroke: currentColor !important;
+}
+
+[data-testid^="section-"] button.absolute.top-2.right-2,
+[data-testid^="section-"] button.absolute.top-3.right-3,
+[data-testid^="card-"] button.absolute.top-2.right-2,
+[data-testid^="card-"] button.absolute.top-3.right-3 {
+  background: rgba(255, 250, 241, 0.9) !important;
+  border: 1px solid rgba(104, 76, 46, 0.16) !important;
+  color: #3a2818 !important;
+  box-shadow: 0 6px 14px rgba(104, 76, 46, 0.12) !important;
+}
+
+[data-testid^="section-"] button.absolute.top-2.right-2 svg:not(.fill-red-500):not(.fill-red-400),
+[data-testid^="section-"] button.absolute.top-3.right-3 svg:not(.fill-red-500):not(.fill-red-400),
+[data-testid^="card-"] button.absolute.top-2.right-2 svg:not(.fill-red-500):not(.fill-red-400),
+[data-testid^="card-"] button.absolute.top-3.right-3 svg:not(.fill-red-500):not(.fill-red-400) {
+  color: #3a2818 !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-best-sellers"] > div:first-child,
+[data-testid="section-shoes"] > div:first-child,
+[data-testid="section-slippers"] > div:first-child,
+[data-testid="section-crocs"] > div:first-child,
+[data-testid="section-all-products"] > div:first-child,
+[data-testid="section-kids-new-arrivals"] > div:first-child,
+[data-testid="section-collections-grid"] > div:first-child {
+  align-items: flex-start !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+[data-testid="section-collections-grid"] > div:first-child {
+  align-items: center !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+[data-testid="section-collections-grid"] a.relative p {
+  display: none !important;
+}
+
+[data-testid="section-collections-grid"] a.relative > div.absolute.inset-0 {
+  inset: auto 0 0 0 !important;
+  height: 80px !important;
+  background: linear-gradient(to top, rgba(234, 217, 192, 0.96) 0%, rgba(250, 242, 230, 0.72) 58%, transparent 100%) !important;
+}
+
+[data-testid="section-collections-grid"] a.relative h3 {
+  color: #2a1f17 !important;
+}
+
+[data-testid="section-all-products"] > div:first-child {
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+[data-testid="section-all-products"] > div:first-child > div:first-child {
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+[data-testid="section-all-products"] .section-description,
+[data-testid="section-all-products"] .codex-section-description {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (min-width: 640px) {
+  [data-testid="section-best-sellers"] > div:first-child,
+  [data-testid="section-shoes"] > div:first-child,
+  [data-testid="section-slippers"] > div:first-child,
+  [data-testid="section-crocs"] > div:first-child,
+  [data-testid="section-all-products"] > div:first-child,
+  [data-testid="section-kids-new-arrivals"] > div:first-child,
+  [data-testid="section-collections-grid"] > div:first-child {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+
+  [data-testid="section-all-products"] > div:first-child {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+}
+
+footer {
+  background: var(--client-offwhite) !important;
+  border-top: 1px solid rgba(104, 76, 46, 0.16) !important;
+}
+
+footer img[alt="Level Egypt"] {
+  filter: brightness(0) !important;
+  opacity: 0.95 !important;
+}
+
+footer p,
+footer a,
+footer h3 {
+  color: rgba(42, 31, 23, 0.72) !important;
+}
+
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+footer h3 {
+  color: rgba(42, 31, 23, 0.88) !important;
+}
+
+footer a[aria-label] {
+  width: 36px !important;
+  height: 36px !important;
+  background: var(--client-offwhite) !important;
+  border: 1px solid rgba(104, 76, 46, 0.14) !important;
+  box-shadow: 0 8px 18px rgba(104, 76, 46, 0.1) !important;
+}
+
+footer a[aria-label="Facebook"] {
+  color: #1877f2 !important;
+}
+
+footer a[aria-label="Instagram"] {
+  color: #e4405f !important;
+}
+
+footer a[aria-label="TikTok"] {
+  color: #111111 !important;
+}
+
+footer a[aria-label="WhatsApp"] {
+  color: #25d366 !important;
+}
+
+/* Client brand color updates - safe layer */
+:root {
+  --client-brown-dark: #4a3d2b;
+  --client-offwhite: #eeeeea;
+  --milk-bg: var(--client-offwhite);
+  --milk-surface: var(--client-offwhite);
+  --milk-surface-2: var(--client-offwhite);
+  --background: 60 11% 93%;
+  --card: 60 11% 93%;
+  --secondary: 60 11% 93%;
+  --muted: 60 11% 93%;
+  --popover: 60 11% 93%;
+  --sidebar: 60 11% 93%;
+  --accent: 39 26% 23%;
+  --ring: 39 26% 23%;
+  --sidebar-primary: 39 26% 23%;
+  --milk-accent: var(--client-brown-dark);
+  --milk-accent-dark: var(--client-brown-dark);
+}
+
+#root > div.min-h-screen > div:first-child,
+#root > div.min-h-screen > div.sticky.top-0,
+[data-testid="nav-bottom"] {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  border-color: rgba(244, 243, 240, 0.18) !important;
+}
+
+/* Header requested style */
+#root > div.min-h-screen > div.sticky.top-0,
+header {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+#root > div.min-h-screen > div:first-child :not(img),
+#root > div.min-h-screen > div.sticky.top-0 :not(img),
+[data-testid="nav-bottom"] :not(img) {
+  color: var(--client-offwhite) !important;
+  stroke: currentColor !important;
+}
+
+[data-testid^="btn-hero-cta-"],
+.bg-accent,
+.bg-\[\#c8a951\],
+button[style*="#c79545"],
+a[style*="#c79545"],
+span[style*="#c79545"],
+[data-testid="section-deals"] [style*="#c79545"],
+[data-testid^="card-"] span.absolute,
+[data-testid^="card-product-"] span.absolute,
+[data-testid^="card-bestseller-"] span.absolute,
+[data-testid^="card-deal-"] span.absolute,
+[data-testid="section-new-arrivals"] span.absolute,
+[data-testid="section-kids-new-arrivals"] span.absolute {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+}
+
+[data-testid^="btn-hero-cta-"] *,
+[data-testid^="card-"] span.absolute *,
+[data-testid^="card-product-"] span.absolute *,
+[data-testid^="card-bestseller-"] span.absolute *,
+[data-testid^="card-deal-"] span.absolute * {
+  color: var(--client-offwhite) !important;
+  stroke: currentColor !important;
+}
+
+[data-testid^="btn-hero-cta-"]:hover,
+[data-testid^="btn-hero-cta2-"]:hover,
+a.text-accent:hover,
+button.text-accent:hover {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+}
+
+.text-accent,
+a.text-accent,
+.border-accent {
+  color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+}
+
+button[style*="rgb(217, 171, 95)"],
+a[style*="rgb(217, 171, 95)"],
+span[style*="rgb(217, 171, 95)"],
+div[style*="rgb(217, 171, 95)"],
+button[style*="#d9ab5f"],
+a[style*="#d9ab5f"],
+span[style*="#d9ab5f"],
+div[style*="#d9ab5f"],
+.bg-\[\#d9ab5f\],
+.bg-\[\#D9AB5F\],
+.bg-\[\#c79545\],
+.bg-\[\#C79545\],
+.bg-\[\#c8a951\],
+.bg-\[\#C8A951\] {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+}
+
+.border-\[\#d9ab5f\],
+.border-\[\#D9AB5F\],
+.border-\[\#c79545\],
+.border-\[\#C79545\],
+.border-\[\#c8a951\],
+.border-\[\#C8A951\] {
+  border-color: var(--client-brown-dark) !important;
+}
+
+.text-amber-400,
+.text-yellow-400,
+.fill-amber-400,
+.fill-yellow-400,
+.fill-\[\#c8a951\],
+.fill-\[\#C8A951\],
+[class*="text-yellow-"],
+[class*="fill-yellow-"],
+[class*="text-amber-"],
+[class*="fill-amber-"] {
+  color: var(--client-brown-dark) !important;
+  fill: var(--client-brown-dark) !important;
+}
+
+button[style*="rgb(199, 149, 69)"],
+a[style*="rgb(199, 149, 69)"],
+span[style*="rgb(199, 149, 69)"],
+div[style*="rgb(199, 149, 69)"],
+button[style*="rgb(200, 169, 81)"],
+a[style*="rgb(200, 169, 81)"],
+span[style*="rgb(200, 169, 81)"],
+div[style*="rgb(200, 169, 81)"],
+button[style*="#ead0a0"],
+a[style*="#ead0a0"],
+span[style*="#ead0a0"],
+div[style*="#ead0a0"],
+button[style*="#ad7d38"],
+a[style*="#ad7d38"],
+span[style*="#ad7d38"],
+div[style*="#ad7d38"],
+.bg-\[\#ead0a0\],
+.bg-\[\#EAD0A0\],
+.bg-\[\#ad7d38\],
+.bg-\[\#AD7D38\],
+.bg-\[\#9f7131\],
+.bg-\[\#9F7131\] {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+  color: var(--client-offwhite) !important;
+}
+
+.border-\[\#ead0a0\],
+.border-\[\#EAD0A0\],
+.border-\[\#ad7d38\],
+.border-\[\#AD7D38\],
+.border-\[\#9f7131\],
+.border-\[\#9F7131\] {
+  border-color: var(--client-brown-dark) !important;
+}
+
+/* Client light color unification */
+body,
+#root,
+#root > div.min-h-screen,
+main,
+section,
+[data-testid^="section-"],
+[data-testid^="card-"],
+[data-testid^="card-product-"],
+[data-testid^="card-bestseller-"],
+[data-testid^="card-deal-"],
+footer {
+  background-color: var(--client-offwhite) !important;
+}
+
+.bg-white,
+.bg-\[\#dddcd7\],
+.bg-\[\#DDDCD7\],
+.bg-\[\#ead9c0\],
+.bg-\[\#EAD9C0\],
+.bg-\[\#faf2e6\],
+.bg-\[\#FAF2E6\],
+.bg-\[\#fffaf1\],
+.bg-\[\#FFFAF1\],
+[style*="#dddcd7"],
+[style*="#DDDCD7"],
+[style*="#ead9c0"],
+[style*="#EAD9C0"],
+[style*="#faf2e6"],
+[style*="#FAF2E6"],
+[style*="#fffaf1"],
+[style*="#FFFAF1"],
+[style*="rgb(255, 248, 236)"],
+[style*="rgb(234, 217, 192)"],
+[style*="rgb(250, 242, 230)"],
+[style*="rgb(255, 250, 241)"],
+[style*="#f3eadc"],
+[style*="#F3EADC"],
+[style*="#faf0e2"],
+[style*="#FAF0E2"],
+[style*="#f1e3ce"],
+[style*="#F1E3CE"],
+[style*="#e8d9c4"],
+[style*="#E8D9C4"],
+[style*="#f8efe2"],
+[style*="#F8EFE2"],
+[style*="rgb(243, 234, 220)"],
+[style*="rgb(250, 240, 226)"],
+[style*="rgb(241, 227, 206)"],
+[style*="rgb(232, 217, 196)"],
+[style*="rgb(248, 239, 226)"] {
+  background: var(--client-offwhite) !important;
+  background-color: var(--client-offwhite) !important;
+}
+
+[data-testid="section-collections-grid"] a.relative > div.absolute.inset-0 {
+  background: linear-gradient(to top, rgba(238, 238, 234, 0.96) 0%, rgba(238, 238, 234, 0.72) 58%, transparent 100%) !important;
+}
+
+.bg-\[\#f3eadc\],
+.bg-\[\#F3EADC\],
+.bg-\[\#faf0e2\],
+.bg-\[\#FAF0E2\],
+.bg-\[\#f1e3ce\],
+.bg-\[\#F1E3CE\],
+.bg-\[\#e8d9c4\],
+.bg-\[\#E8D9C4\],
+.bg-\[\#f8efe2\],
+.bg-\[\#F8EFE2\],
+.bg-card,
+.bg-muted,
+.bg-secondary,
+.bg-popover,
+.bg-background,
+.bg-white\/90,
+.aspect-square,
+.aspect-\[3\/4\],
+.brand-strip,
+[data-testid="brand-strip"],
+.customer-reviews-section,
+.customer-reviews-section .customer-review-card,
+.trust-services-section > div > div {
+  background: var(--client-offwhite) !important;
+  background-color: var(--client-offwhite) !important;
+}
+
+.from-black\/70,
+.from-black\/75,
+.from-black\/65 {
+  --tw-gradient-from: rgba(238, 238, 234, 0.72) var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(238, 238, 234, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), rgba(238, 238, 234, 0.44), var(--tw-gradient-to) !important;
+}
+
+/* Main logo header controls */
+#root > div.min-h-screen > div.sticky.top-0 button,
+#root > div.min-h-screen > div.sticky.top-0 a,
+#root > div.min-h-screen > div.sticky.top-0 [role="button"],
+header button,
+header a,
+header [role="button"] {
+  color: #000000 !important;
+}
+
+#root > div.min-h-screen > div.sticky.top-0 button *,
+#root > div.min-h-screen > div.sticky.top-0 a *,
+#root > div.min-h-screen > div.sticky.top-0 [role="button"] *,
+header button *,
+header a *,
+header [role="button"] * {
+  color: #000000 !important;
+  fill: none !important;
+  stroke: currentColor !important;
+}
+
+#root > div.min-h-screen > div.sticky.top-0 button svg,
+#root > div.min-h-screen > div.sticky.top-0 a svg,
+header button svg,
+header a svg {
+  color: #000000 !important;
+  fill: none !important;
+  stroke: currentColor !important;
+}
+
+#root > div.min-h-screen > div.sticky.top-0 button span.absolute.rounded-full,
+#root > div.min-h-screen > div.sticky.top-0 a span.absolute.rounded-full,
+#root > div.min-h-screen > div.sticky.top-0 button [class*="rounded-full"][class*="absolute"],
+#root > div.min-h-screen > div.sticky.top-0 a [class*="rounded-full"][class*="absolute"],
+header button span.absolute.rounded-full,
+header a span.absolute.rounded-full,
+header button [class*="rounded-full"][class*="absolute"],
+header a [class*="rounded-full"][class*="absolute"] {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+#root > div.min-h-screen > div:first-child a[href*="whatsapp"],
+#root > div.min-h-screen > div:first-child a[href*="wa.me"],
+#root > div.min-h-screen > div:first-child a[href*="whatsapp"] *,
+#root > div.min-h-screen > div:first-child a[href*="wa.me"] * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Drawer category menu */
+[data-testid="drawer-menu"] > div.flex-1 > a,
+[data-testid="drawer-menu"] > div.flex-1 > div > button {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #000000 !important;
+}
+
+[data-testid="drawer-menu"] > div.flex-1 > a svg,
+[data-testid="drawer-menu"] > div.flex-1 > div > button svg {
+  color: var(--client-brown-dark) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="drawer-menu"] > div.flex-1 > a svg *,
+[data-testid="drawer-menu"] > div.flex-1 > div > button svg *,
+[data-testid="drawer-menu"] > div.flex-1 > a path,
+[data-testid="drawer-menu"] > div.flex-1 > div > button path,
+[data-testid="drawer-menu"] > div.flex-1 > a circle,
+[data-testid="drawer-menu"] > div.flex-1 > div > button circle,
+[data-testid="drawer-menu"] > div.flex-1 > a rect,
+[data-testid="drawer-menu"] > div.flex-1 > div > button rect,
+[data-testid="drawer-menu"] > div.flex-1 > a line,
+[data-testid="drawer-menu"] > div.flex-1 > div > button line,
+[data-testid="drawer-menu"] > div.flex-1 > a polyline,
+[data-testid="drawer-menu"] > div.flex-1 > div > button polyline {
+  color: var(--client-brown-dark) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="drawer-menu"] > div.flex-1 > div:has(> div.pb-1) > button {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  color: #ffffff !important;
+}
+
+[data-testid="drawer-menu"] > div.flex-1 > div:has(> div.pb-1) > button * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="drawer-menu"] > div.flex-1 > div > div.pb-1 {
+  background: rgba(74, 61, 43, 0.06) !important;
+}
+
+/* Categories: keep only mobile circles on desktop */
+@media (min-width: 768px) {
+  [data-testid="section-categories"] > div:first-child {
+    display: flex !important;
+  }
+
+  [data-testid="section-categories"] > div:nth-child(2) {
+    display: none !important;
+  }
+}
+
+/* Desktop category strip */
+@media (min-width: 768px) {
+  [data-testid="section-hero-slider"] + div,
+  [data-testid="section-hero-slider"] + div[style] {
+    background: var(--client-offwhite) !important;
+    background-color: var(--client-offwhite) !important;
+  }
+
+  [data-testid="section-categories"] {
+    background: #e8e8e3 !important;
+    background-color: #e8e8e3 !important;
+    border-radius: 0 !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    width: 100vw !important;
+  }
+
+  [data-testid="section-hero-slider"] {
+    height: clamp(220px, 34vw, 340px) !important;
+  }
+
+  [data-testid="section-categories"] {
+    padding: 18px 24px 20px !important;
+  }
+
+  [data-testid="section-categories"] > div,
+  [data-testid="section-categories"] .md\:hidden {
+    align-items: flex-start !important;
+    background: transparent !important;
+    display: flex !important;
+    gap: 26px !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 920px !important;
+    overflow: visible !important;
+  }
+
+  [data-testid="section-categories"] .hidden.md\:flex {
+    display: none !important;
+  }
+
+  [data-testid="section-categories"] a {
+    align-items: center !important;
+    background: transparent !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 9px !important;
+    min-width: 88px !important;
+    width: 96px !important;
+  }
+
+  [data-testid="section-categories"] a > div {
+    align-items: center !important;
+    background: transparent !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 9px !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: static !important;
+  }
+
+  [data-testid="section-categories"] a img,
+  [data-testid="section-categories"] a > div > div:first-child {
+    background: var(--client-offwhite) !important;
+    border: 2px solid rgba(238, 238, 234, 0.72) !important;
+    border-radius: 9999px !important;
+    height: 78px !important;
+    object-fit: cover !important;
+    width: 78px !important;
+  }
+
+  [data-testid="section-categories"] a span,
+  [data-testid="section-categories"] a p,
+  [data-testid="section-categories"] a h3 {
+    color: #000000 !important;
+    display: block !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    position: static !important;
+    text-align: center !important;
+    text-shadow: none !important;
+    width: 100% !important;
+  }
+}
+
+/* Final category strip spacing/background fixes */
+[data-testid="section-hero-slider"] + div,
+[data-testid="section-hero-slider"] + div[style] {
+  margin-bottom: 0 !important;
+}
+
+[data-testid="section-categories"] {
+  background: #e8e8e3 !important;
+  background-color: #e8e8e3 !important;
+  margin-top: -1px !important;
+}
+
+@media (max-width: 767.98px) {
+  [data-testid="section-hero-slider"] + div,
+  [data-testid="section-hero-slider"] + div[style] {
+    background: var(--client-offwhite) !important;
+    background-color: var(--client-offwhite) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+
+  [data-testid="section-hero-slider"] + div + div {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  [data-testid="section-hero-slider"] + div + div > div {
+    padding-top: 0 !important;
+  }
+
+  [data-testid="section-categories"] {
+    background: #e8e8e3 !important;
+    background-color: #e8e8e3 !important;
+    border-radius: 0 !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    margin-top: -1px !important;
+    padding: 10px 0 12px !important;
+    width: 100vw !important;
+  }
+
+  [data-testid="section-categories"] .md\:hidden {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 420px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  [data-testid="section-categories"] {
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    width: 100vw !important;
+  }
+}
+
+/* Announcement ticker */
+[data-testid="section-hero-slider"] + div,
+[data-testid="section-hero-slider"] + div[style] {
+  background: #6a5b47 !important;
+  background-color: #6a5b47 !important;
+  border-top: 1px solid rgba(74, 61, 43, 0.12) !important;
+  border-bottom: 1px solid rgba(74, 61, 43, 0.12) !important;
+}
+
+[data-testid="section-hero-slider"] + div img {
+  filter: none !important;
+  height: 18px !important;
+  opacity: 1 !important;
+  width: auto !important;
+}
+
+[data-testid="section-hero-slider"] + div span {
+  color: #000000 !important;
+}
+
+[data-testid="section-hero-slider"] + div span.ml-4 {
+  display: none !important;
+}
+
+/* View-all brown buttons and deals accent */
+:root {
+  --client-deal-red: #a83a32;
+  --client-deal-red-dark: #7f2824;
+  --client-deal-red-soft: #f4e7e5;
+  --client-brown-hover: #6a593f;
+}
+
+a.bg-accent,
+button.bg-accent,
+a[class*="bg-accent"],
+button[class*="bg-accent"],
+a.text-accent:hover,
+button.text-accent:hover,
+a[class*="hover:bg-accent"]:hover,
+button[class*="hover:bg-accent"]:hover {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+  color: #ffffff !important;
+}
+
+a.bg-accent *,
+button.bg-accent *,
+a[class*="bg-accent"] *,
+button[class*="bg-accent"] *,
+a.text-accent:hover *,
+button.text-accent:hover *,
+a[class*="hover:bg-accent"]:hover *,
+button[class*="hover:bg-accent"]:hover * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-deals"] {
+  background: var(--client-deal-red-soft) !important;
+  background-color: var(--client-deal-red-soft) !important;
+}
+
+[data-testid="section-deals"] > div:first-child p:first-child,
+[data-testid="section-deals"] > div:first-child h2,
+[data-testid="section-deals"] .text-accent,
+[data-testid="section-deals"] a.text-accent {
+  color: var(--client-deal-red) !important;
+}
+
+[data-testid="section-deals"] [style*="#c79545"],
+[data-testid="section-deals"] [style*="#d9ab5f"],
+[data-testid="section-deals"] .bg-accent,
+[data-testid="section-deals"] a[class*="bg-accent"],
+[data-testid="section-deals"] button[class*="bg-accent"],
+[data-testid="section-deals"] [data-testid^="card-"] span.absolute,
+[data-testid="section-deals"] [data-testid^="card-deal-"] span.absolute {
+  background: var(--client-deal-red) !important;
+  background-color: var(--client-deal-red) !important;
+  border-color: var(--client-deal-red) !important;
+  color: #ffffff !important;
+}
+
+[data-testid="section-deals"] [style*="#c79545"] *,
+[data-testid="section-deals"] [style*="#d9ab5f"] *,
+[data-testid="section-deals"] .bg-accent *,
+[data-testid="section-deals"] a[class*="bg-accent"] *,
+[data-testid="section-deals"] button[class*="bg-accent"] *,
+[data-testid="section-deals"] [data-testid^="card-"] span.absolute *,
+[data-testid="section-deals"] [data-testid^="card-deal-"] span.absolute * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-deals"] a.text-accent:hover,
+[data-testid="section-deals"] button.text-accent:hover,
+[data-testid="section-deals"] a[class*="hover:bg-accent"]:hover,
+[data-testid="section-deals"] button[class*="hover:bg-accent"]:hover {
+  background: var(--client-deal-red) !important;
+  background-color: var(--client-deal-red) !important;
+  border-color: var(--client-deal-red) !important;
+  color: #ffffff !important;
+}
+
+[data-testid="section-deals"] [style*="#4a3d2b"],
+[data-testid="section-deals"] [style*="rgb(74, 61, 43)"],
+[data-testid="section-deals"] .bg-\[\#4a3d2b\],
+[data-testid="section-deals"] .bg-\[\#4A3D2B\],
+[data-testid="section-deals"] [class*="bg-[#4a3d2b]"] {
+  background: var(--client-deal-red) !important;
+  background-color: var(--client-deal-red) !important;
+  border-color: var(--client-deal-red) !important;
+  color: #ffffff !important;
+}
+
+[data-testid="section-deals"] [style*="#4a3d2b"] *,
+[data-testid="section-deals"] [style*="rgb(74, 61, 43)"] *,
+[data-testid="section-deals"] .bg-\[\#4a3d2b\] *,
+[data-testid="section-deals"] .bg-\[\#4A3D2B\] *,
+[data-testid="section-deals"] [class*="bg-[#4a3d2b]"] * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-deals"] > div:first-child [class*="rounded"],
+[data-testid="section-deals"] > div:first-child span[style],
+[data-testid="section-deals"] > div:first-child div[style*="#4a3d2b"],
+[data-testid="section-deals"] > div:first-child div[style*="rgb(74, 61, 43)"],
+[data-testid="section-deals"] > div:first-child div[style*="#c79545"],
+[data-testid="section-deals"] > div:first-child div[style*="rgb(199, 149, 69)"] {
+  background: var(--client-deal-red) !important;
+  background-color: var(--client-deal-red) !important;
+  border-color: var(--client-deal-red) !important;
+  color: #ffffff !important;
+}
+
+[data-testid="section-deals"] > div:first-child [style*="#9f7131"],
+[data-testid="section-deals"] > div:first-child [style*="#3a2818"],
+[data-testid="section-deals"] > div:first-child [style*="rgb(159, 113, 49)"],
+[data-testid="section-deals"] > div:first-child [style*="rgb(58, 40, 24)"] {
+  color: var(--client-deal-red) !important;
+}
+
+[data-testid="section-deals"] > div:first-child div[style*="#c79545"] *,
+[data-testid="section-deals"] > div:first-child div[style*="rgb(199, 149, 69)"] * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-deals"] [data-testid^="btn-add-deal-"] {
+  background: var(--client-deal-red) !important;
+  background-color: var(--client-deal-red) !important;
+  border-color: var(--client-deal-red) !important;
+  color: #ffffff !important;
+}
+
+[data-testid="section-deals"] [data-testid^="btn-add-deal-"] *,
+[data-testid="section-deals"] [data-testid^="btn-add-deal-"] svg,
+[data-testid="section-deals"] [data-testid^="btn-add-deal-"] svg * {
+  color: #ffffff !important;
+  fill: none !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-deals"] [data-testid^="btn-add-deal-"]:hover {
+  background: var(--client-deal-red-dark) !important;
+  background-color: var(--client-deal-red-dark) !important;
+  border-color: var(--client-deal-red-dark) !important;
+}
+
+[data-testid^="link-view-"],
+[data-testid*="link-view"],
+a[href*="collections"][class*="rounded-full"][class*="text-accent"] {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+  color: #ffffff !important;
+}
+
+[data-testid^="link-view-"] *,
+[data-testid*="link-view"] *,
+a[href*="collections"][class*="rounded-full"][class*="text-accent"] * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid^="link-view-"]:hover,
+[data-testid*="link-view"]:hover,
+a[href*="collections"][class*="rounded-full"][class*="text-accent"]:hover {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: var(--client-brown-dark) !important;
+  color: var(--client-brown-dark) !important;
+}
+
+[data-testid^="link-view-"]:hover *,
+[data-testid*="link-view"]:hover *,
+a[href*="collections"][class*="rounded-full"][class*="text-accent"]:hover * {
+  color: var(--client-brown-dark) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Fix View All in Kids New Arrivals */
+[data-testid="section-kids-new-arrivals"] [data-testid^="link-view-"],
+[data-testid="section-kids-new-arrivals"] a[href*="collections"][class*="rounded-full"] {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+  border-color: var(--client-brown-dark) !important;
+  color: #ffffff !important;
+}
+
+[data-testid="section-kids-new-arrivals"] [data-testid^="link-view-"] *,
+[data-testid="section-kids-new-arrivals"] a[href*="collections"][class*="rounded-full"] * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-kids-new-arrivals"] [data-testid^="link-view-"]:hover,
+[data-testid="section-kids-new-arrivals"] a[href*="collections"][class*="rounded-full"]:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+[data-testid="section-kids-new-arrivals"] [data-testid^="link-view-"]:hover *,
+[data-testid="section-kids-new-arrivals"] a[href*="collections"][class*="rounded-full"]:hover * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* New Arrivals (Men/Women) + Kids: hover without background */
+[data-testid="section-new-arrivals"] [data-testid^="link-view-"]:hover,
+[data-testid="section-new-arrivals"] a[href*="collections"][class*="rounded-full"]:hover,
+[data-testid="section-kids-new-arrivals"] [data-testid^="link-view-"]:hover,
+[data-testid="section-kids-new-arrivals"] a[href*="collections"][class*="rounded-full"]:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+[data-testid="section-new-arrivals"] a.text-accent:hover,
+[data-testid="section-new-arrivals"] button.text-accent:hover,
+[data-testid="section-new-arrivals"] a[class*="hover:bg-accent"]:hover,
+[data-testid="section-new-arrivals"] button[class*="hover:bg-accent"]:hover,
+[data-testid="section-kids-new-arrivals"] a.text-accent:hover,
+[data-testid="section-kids-new-arrivals"] button.text-accent:hover,
+[data-testid="section-kids-new-arrivals"] a[class*="hover:bg-accent"]:hover,
+[data-testid="section-kids-new-arrivals"] button[class*="hover:bg-accent"]:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: #8a775e !important;
+  border-color: #8a775e !important;
+}
+
+[data-testid="section-new-arrivals"] a.text-accent:hover *,
+[data-testid="section-new-arrivals"] button.text-accent:hover *,
+[data-testid="section-new-arrivals"] a[class*="hover:bg-accent"]:hover *,
+[data-testid="section-new-arrivals"] button[class*="hover:bg-accent"]:hover *,
+[data-testid="section-kids-new-arrivals"] a.text-accent:hover *,
+[data-testid="section-kids-new-arrivals"] button.text-accent:hover *,
+[data-testid="section-kids-new-arrivals"] a[class*="hover:bg-accent"]:hover *,
+[data-testid="section-kids-new-arrivals"] button[class*="hover:bg-accent"]:hover * {
+  color: #8a775e !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Shop Collections View All: same behavior */
+[data-testid="section-collections-grid"] [data-testid^="link-view-"],
+[data-testid="section-collections-grid"] a[href*="collections"][class*="rounded-full"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #111111 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-weight: 500 !important;
+}
+
+[data-testid="section-collections-grid"] [data-testid^="link-view-"] *,
+[data-testid="section-collections-grid"] a[href*="collections"][class*="rounded-full"] * {
+  color: #111111 !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-collections-grid"] a.text-accent:hover,
+[data-testid="section-collections-grid"] button.text-accent:hover,
+[data-testid="section-collections-grid"] a[class*="hover:bg-accent"]:hover,
+[data-testid="section-collections-grid"] button[class*="hover:bg-accent"]:hover,
+[data-testid="section-collections-grid"] [data-testid^="link-view-"]:hover,
+[data-testid="section-collections-grid"] a[href*="collections"][class*="rounded-full"]:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: #4a3d2b !important;
+  border-color: transparent !important;
+}
+
+/* Hard override for Shop Collections view-all button hover */
+[data-testid="section-collections-grid"] a.rounded-full:hover,
+[data-testid="section-collections-grid"] button.rounded-full:hover,
+[data-testid="section-collections-grid"] a.rounded-full[class*="hover"]:hover,
+[data-testid="section-collections-grid"] button.rounded-full[class*="hover"]:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: #8a775e !important;
+  border-color: #8a775e !important;
+}
+
+[data-testid="section-collections-grid"] a.rounded-full:hover *,
+[data-testid="section-collections-grid"] button.rounded-full:hover * {
+  color: #4a3d2b !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+[data-testid="section-collections-grid"] a.text-accent:hover *,
+[data-testid="section-collections-grid"] button.text-accent:hover *,
+[data-testid="section-collections-grid"] a[class*="hover:bg-accent"]:hover *,
+[data-testid="section-collections-grid"] button[class*="hover:bg-accent"]:hover *,
+[data-testid="section-collections-grid"] [data-testid^="link-view-"]:hover *,
+[data-testid="section-collections-grid"] a[href*="collections"][class*="rounded-full"]:hover * {
+  color: #4a3d2b !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Final sync: All Products + Footer use same bg as categories circles section */
+[data-testid="section-all-products"],
+[data-testid="section-all-products"] > div,
+footer,
+footer > div {
+  background: #e8e8e3 !important;
+  background-color: #e8e8e3 !important;
+}
+
+/* Footer links: remove any forced dark backgrounds (Men/Women etc.) */
+footer a:not([aria-label]),
+footer a:not([aria-label]):hover,
+footer a:not([aria-label]):focus,
+footer a:not([aria-label]):active,
+footer a:not([aria-label])[class],
+footer a:not([aria-label])[class]:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #2a1f17 !important;
+}
+
+footer a:not([aria-label]) * {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #2a1f17 !important;
+}
+
+/* Footer social icons: same visual language as menu icons */
+footer a[aria-label],
+footer a[aria-label]:hover,
+footer a[aria-label]:focus,
+footer a[aria-label]:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+footer a[aria-label] svg,
+footer a[aria-label] svg * {
+  color: var(--client-brown-dark) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+footer a[aria-label]:hover svg,
+footer a[aria-label]:hover svg *,
+footer a[aria-label]:focus-visible svg,
+footer a[aria-label]:focus-visible svg * {
+  color: #8a775e !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Final kill-switch for brown chips behind footer text links */
+footer .bg-accent,
+footer [class*="bg-accent"],
+footer [style*="#4a3d2b"],
+footer [style*="rgb(74, 61, 43)"],
+footer [style*="#c79545"],
+footer [style*="rgb(199, 149, 69)"],
+footer span,
+footer a span {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #2a1f17 !important;
+}
+
+/* Smaller add-to-cart buttons in the 3 New Arrivals sections only */
+[data-testid="section-new-arrivals"] [data-testid^="card-"] button:not(.absolute):not([data-testid^="btn-wishlist-"]),
+[data-testid="section-best-sellers"] [data-testid^="card-"] button:not(.absolute):not([data-testid^="btn-wishlist-"]),
+[data-testid="section-kids-new-arrivals"] [data-testid^="card-"] button:not(.absolute):not([data-testid^="btn-wishlist-"]) {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  color: #2a1f17 !important;
+  font-family: "Cairo", "Tajawal", "Segoe UI", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 1.2 !important;
+  min-height: 34px !important;
+  padding: 8px 10px !important;
+  border-radius: 9999px !important;
+}
+
+[data-testid="section-new-arrivals"] [data-testid^="card-"] button:not(.absolute):not([data-testid^="btn-wishlist-"]) *,
+[data-testid="section-best-sellers"] [data-testid^="card-"] button:not(.absolute):not([data-testid^="btn-wishlist-"]) *,
+[data-testid="section-kids-new-arrivals"] [data-testid^="card-"] button:not(.absolute):not([data-testid^="btn-wishlist-"]) * {
+  color: #2a1f17 !important;
+  stroke: currentColor !important;
+}
+
+/* Final hard override: main sticky header must stay white */
+#root > div.min-h-screen > div.sticky.top-0,
+#root > div.min-h-screen > div.sticky.top-0[style],
+#root > div.min-h-screen > div.sticky.top-0 > div,
+#root > div.min-h-screen > div.sticky.top-0 > div[style] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* The row under logo inside header */
+#root > div.min-h-screen > div.sticky.top-0 > div:last-child,
+#root > div.min-h-screen > div.sticky.top-0 > div:last-child[style],
+#root > div.min-h-screen > div.sticky.top-0 nav,
+#root > div.min-h-screen > div.sticky.top-0 nav[style],
+#root > div.min-h-screen > div.sticky.top-0 [role="navigation"],
+#root > div.min-h-screen > div.sticky.top-0 [role="navigation"][style] {
+  background: #f4f4f1 !important;
+  background-color: #f4f4f1 !important;
+}
+
+/* Keep top bar unchanged (dark) */
+#root > div.min-h-screen > div:first-child,
+#root > div.min-h-screen > div:first-child[style] {
+  background: var(--client-brown-dark) !important;
+  background-color: var(--client-brown-dark) !important;
+}
+
+/* ===== Dedicated Menu System (mobile + desktop) ===== */
+/* Mobile drawer base */
+[data-testid="drawer-menu"] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+[data-testid="drawer-menu"] > div:first-child {
+  background: #e8e8e3 !important;
+  background-color: #e8e8e3 !important;
+}
+
+[data-testid="drawer-menu"] > div.flex-1 > div > button,
+[data-testid="drawer-menu"] > div.flex-1 > a {
+  color: #000000 !important;
+}
+
+[data-testid="drawer-menu"] > div.flex-1 > div > button svg,
+[data-testid="drawer-menu"] > div.flex-1 > a svg,
+[data-testid="drawer-menu"] > div.flex-1 > div > button svg *,
+[data-testid="drawer-menu"] > div.flex-1 > a svg * {
+  color: #000000 !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Active row should be logo-bg tone, not dark brown */
+[data-testid="drawer-menu"] > div.flex-1 > div:has(> div.pb-1) > button {
+  background: #e8e8e3 !important;
+  background-color: #e8e8e3 !important;
+  color: #000000 !important;
+}
+
+[data-testid="drawer-menu"] > div.flex-1 > div:has(> div.pb-1) > button * {
+  color: #000000 !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+
+/* =========================================================
+   Final separation: Tabs styles are isolated from Menu styles
+   ========================================================= */
+
+/* Tabs only */
+.client-menu-tabs-scope .client-menu-tab-item {
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+}
+
+@media (min-width: 1024px) {
+  .client-menu-tabs-scope .client-menu-tab-item {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.client-menu-tabs-scope .client-menu-tab-item * {
+  color: inherit !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+.client-menu-tabs-scope .client-menu-tab-item[data-client-active-tab="true"] {
+  background: #4a3d2b !important;
+  background-color: #4a3d2b !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.client-menu-tabs-scope .client-menu-tab-item[data-client-active-tab="true"] * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.client-menu-tabs-scope .client-menu-tab-item[data-client-active-tab="false"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+}
+
+.client-menu-tabs-scope .client-menu-tab-item[data-client-active-tab="false"] * {
+  color: #111111 !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  -webkit-text-fill-color: #111111 !important;
+}
+
+@media (min-width: 1024px) {
+  .client-menu-tabs-scope .client-menu-tab-item:not([data-client-active-tab="true"]),
+  .client-menu-tabs-scope .client-menu-tab-item:not([data-client-active-tab="true"]):hover,
+  .client-menu-tabs-scope .client-menu-tab-item:not([data-client-active-tab="true"]):focus-visible,
+  .client-menu-tabs-scope .client-menu-tab-item:not([data-client-active-tab="true"])[class*="bg-white"],
+  .client-menu-tabs-scope .client-menu-tab-item:not([data-client-active-tab="true"])[class*="bg-"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
+
+  .client-menu-tabs-scope a.flex:not([data-client-active-tab="true"]),
+  .client-menu-tabs-scope a.flex:not([data-client-active-tab="true"]):hover,
+  .client-menu-tabs-scope a.flex:not([data-client-active-tab="true"]):focus-visible {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
+}
+
+/* Kill inherited tailwind-like white text classes inside desktop tabs */
+.client-menu-tabs-scope .client-menu-tab-item.text-white\/70,
+.client-menu-tabs-scope .client-menu-tab-item[class*="text-white"],
+.client-menu-tabs-scope .client-menu-tab-item[data-client-active-tab="false"].text-white\/70,
+.client-menu-tabs-scope .client-menu-tab-item[data-client-active-tab="false"][class*="text-white"] {
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+}
+
+.client-menu-tabs-scope .client-menu-tab-item.text-white\/70 *,
+.client-menu-tabs-scope .client-menu-tab-item[class*="text-white"] * {
+  color: inherit !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+/* Menu only */
+.client-menu-scope [role="menuitem"]:hover,
+.client-menu-scope [role="menuitem"]:focus-visible,
+.client-menu-scope a:hover,
+.client-menu-scope button:hover {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+.client-menu-scope [role="menuitem"]:hover *,
+.client-menu-scope [role="menuitem"]:focus-visible *,
+.client-menu-scope a:hover *,
+.client-menu-scope button:hover * {
+  color: #111111 !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+@media (min-width: 1024px) {
+  .client-topbar-socials {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    margin-inline-start: 8px !important;
+    vertical-align: middle !important;
+  }
+
+  .client-topbar-social-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  .client-topbar-social-link svg,
+  .client-topbar-social-link svg * {
+    width: 14px !important;
+    height: 14px !important;
+    color: #ffffff !important;
+    fill: currentColor !important;
+    stroke: currentColor !important;
+  }
+
+.client-topbar-social-link:hover,
+.client-topbar-social-link:focus-visible {
+  background: transparent !important;
+}
+}
+
+/* Final section tabs system (independent from menu) */
+#root .client-pill-tab-group {
+  display: inline-flex !important;
+  align-items: center !important;
+  border: 1px solid #d9d9d3 !important;
+  border-radius: 999px !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+
+#root .client-pill-tab-group .client-pill-tab {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  transition: background-color 0.22s ease, color 0.22s ease !important;
+}
+
+#root .client-pill-tab-group .client-pill-tab * {
+  color: inherit !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+#root .client-pill-tab-group .client-pill-tab[data-client-pill-active="true"] {
+  background: #4a3d2b !important;
+  background-color: #4a3d2b !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+#root .client-pill-tab-group .client-pill-tab[data-client-pill-active="true"] * {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Rewritten header descriptions: isolated classes per section type */
+.client-header-desc,
+.client-tab-header-desc {
+  display: block !important;
+  width: 100% !important;
+  margin: 4px 0 0 !important;
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  color: rgba(17, 17, 17, 0.58) !important;
+  max-width: 340px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  text-align: left !important;
+  align-self: flex-start !important;
+  direction: ltr !important;
+}
+
+.client-tab-header-desc {
+  display: none !important;
+}
+
+.client-desc-new-arrivals-women {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Give All Products section more breathing room from the top */
+[data-testid="section-all-products"] {
+  padding-top: 16px !important;
+}
+
+/* Section headers: keep description right under title and actions pinned right (mobile + desktop) */
+[data-testid="section-new-arrivals"] section > div > div:first-child,
+[data-testid="section-kids-new-arrivals"] > div:first-child,
+[data-testid="section-best-sellers"] > div:first-child,
+[data-testid="section-shoes"] > div:first-child,
+[data-testid="section-slippers"] > div:first-child,
+[data-testid="section-crocs"] > div:first-child,
+[data-testid="section-all-products"] > div:first-child {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  align-items: start !important;
+  column-gap: 12px !important;
+  row-gap: 2px !important;
+  text-align: left !important;
+}
+
+[data-testid="section-new-arrivals"] section > div > div:first-child > h2,
+[data-testid="section-kids-new-arrivals"] > div:first-child > h2,
+[data-testid="section-best-sellers"] > div:first-child > h2,
+[data-testid="section-shoes"] > div:first-child > h2,
+[data-testid="section-slippers"] > div:first-child > h2,
+[data-testid="section-crocs"] > div:first-child > h2,
+[data-testid="section-all-products"] > div:first-child > h2 {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  margin: 0 !important;
+}
+
+[data-testid="section-new-arrivals"] section > div > div:first-child .section-description,
+[data-testid="section-new-arrivals"] section > div > div:first-child .codex-section-description,
+[data-testid="section-new-arrivals"] section > div > div:first-child .client-header-desc,
+[data-testid="section-kids-new-arrivals"] > div:first-child .section-description,
+[data-testid="section-kids-new-arrivals"] > div:first-child .codex-section-description,
+[data-testid="section-kids-new-arrivals"] > div:first-child .client-header-desc,
+[data-testid="section-best-sellers"] > div:first-child .section-description,
+[data-testid="section-best-sellers"] > div:first-child .codex-section-description,
+[data-testid="section-best-sellers"] > div:first-child .client-header-desc,
+[data-testid="section-shoes"] > div:first-child .section-description,
+[data-testid="section-shoes"] > div:first-child .codex-section-description,
+[data-testid="section-shoes"] > div:first-child .client-header-desc,
+[data-testid="section-slippers"] > div:first-child .section-description,
+[data-testid="section-slippers"] > div:first-child .codex-section-description,
+[data-testid="section-slippers"] > div:first-child .client-header-desc,
+[data-testid="section-crocs"] > div:first-child .section-description,
+[data-testid="section-crocs"] > div:first-child .codex-section-description,
+[data-testid="section-crocs"] > div:first-child .client-header-desc,
+[data-testid="section-all-products"] > div:first-child .section-description,
+[data-testid="section-all-products"] > div:first-child .codex-section-description,
+[data-testid="section-all-products"] > div:first-child .client-header-desc {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  align-self: start !important;
+}
+
+[data-testid="section-new-arrivals"] section > div > div:first-child > a,
+[data-testid="section-new-arrivals"] section > div > div:first-child > button,
+[data-testid="section-kids-new-arrivals"] > div:first-child > a,
+[data-testid="section-kids-new-arrivals"] > div:first-child > button,
+[data-testid="section-best-sellers"] > div:first-child > a,
+[data-testid="section-best-sellers"] > div:first-child > button,
+[data-testid="section-shoes"] > div:first-child > a,
+[data-testid="section-shoes"] > div:first-child > button,
+[data-testid="section-slippers"] > div:first-child > a,
+[data-testid="section-slippers"] > div:first-child > button,
+[data-testid="section-crocs"] > div:first-child > a,
+[data-testid="section-crocs"] > div:first-child > button,
+[data-testid="section-all-products"] > div:first-child > a,
+[data-testid="section-all-products"] > div:first-child > button {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  justify-self: end !important;
+  align-self: start !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+}

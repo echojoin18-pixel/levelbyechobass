@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Level Egypt</title>
+    <base href="./">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        var base = '/api/site';
+        var p = window.location.pathname;
+        if (p.startsWith(base)) {
+          var newPath = p.slice(base.length) || '/';
+          history.replaceState(null, '', newPath + window.location.search + window.location.hash);
+        }
+      })();
+    </script>
+    <script defer src="assets/index-CbAT8zL0.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-BMpOgD8L.css">
+    <link rel="stylesheet" href="assets/level-clean-overrides.css?v=1778175400">
+    <link rel="stylesheet" href="assets/level-stabilization.css?v=2">
+    <script>
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      window.addEventListener("load", function () {
+        setTimeout(function () { window.scrollTo(0, 0); }, 0);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="assets/level-clean-overrides.js" defer></script>
+    <script src="assets/level-stabilization.js?v=1" defer></script>
+  </body>
+</html>
